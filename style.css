@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(235, 235, 255);
+    position: relative;
+    min-height: 100vh;
+}
+
+header, footer{
+    padding: 12px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav,main{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    justify-content: center;
+    padding: 29px;
+    gap: 20px;
+}
+nav a i {
+    font-size: 35px;
+    color: black;
+}
+
+main{
+    padding: 0 20px 40px;
+    justify-content: space-between;
+}
+
+main aside, main section{
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    width: 48%;
+    align-self: stretch;
+    font-family: "Playwrite NG Modern", cursive;
+}
+main aside h1, main section h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+main aside table th, main aside table tr td:first-child{
+    text-align: center;
+    padding: 0 20px;
+}
+
+main section .info-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+main section .info-wrapper .text{
+    width: 55%;
+}
+main section .info-wrapper .text table tr td{
+    padding: 20px 0;
+}
+main section .info-wrapper .img{
+    width: 45%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+main section .info-wrapper .img img{
+    width: 100%;
+    height: 250px;
+}
+
+@media (max-width: 760px){
+    header h4{
+        font-size: 90%;
+    }
+    header{
+        flex-direction: column;
+        align-items: start;
+    }
+    main,main section .info-wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    main section aside h1{
+        font-size: 93%;
+    }
+    main section aside table tr td{
+        padding: 0;
+        font-size: 90%;
+    }
+    main aside, main section, main section .info-wrapper .img, main section .info-wrapper .text{
+        width: 100%;
+    }
+    footer{
+        position: relative;
+    }
+    main section .info-wrapper .text table tr td{
+        padding: 0;
+        font-size: 90%;
+    }
+}
